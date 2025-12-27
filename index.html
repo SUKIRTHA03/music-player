@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-like Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Sidebar Suggestions -->
+        <div class="sidebar">
+            <h2>Suggestions</h2>
+            <ul id="song-list">
+                <li data-title="Shake It Off" data-artist="Taylor Swift" data-audio="audio/shakeitoff.mp3">Shake It Off</li>
+                <li data-title="Shape of You" data-artist="Ed Sheeran" data-audio="audio/shapeofyou.mp3">Shape of You</li>
+                <li data-title="Sao Paulo" data-artist="The Weeknd" data-audio="audio/saopaulo.mp3">Sao Paula</li>
+                <li data-title="Tout Donner" data-artist="SDM" data-audio="audio/toutdonner.mp3">Tout Donner</li>
+                <li data-title="Attention" data-artist="Charlie Puth" data-audio="audio/attention.mp3">Attention</li>
+                <li data-title="Brooklyn Baby" data-artist="Lana Del Rey" data-audio="audio/brooklynbaby.mp3">Brooklyn Baby</li>
+                <li data-title="End of the Beginning" data-artist="Djo" data-audio="audio/endofthebeginning.mp3">End of the Beginning</li>
+                <li data-title="Diet Mountain Dew" data-artist="Lana Del Rey" data-audio="audio/dietmountaindew.mp3">Diet Mountain Dew</li>
+            </ul>
+        </div>
+
+        <!-- Main Player -->
+        <div class="player">
+            <div class="song-info">
+                <div class="album-cover" id="album-cover">Music</div>
+                <div class="song-details">
+                    <h3 id="song-title">Sao Paulo</h3>
+                    <p id="song-artist">The Weeknd</p>
+                </div>
+            </div>
+
+            <audio id="audio" src="audio/saopaulo.mp3"></audio>
+
+            <div class="controls">
+                <button class="control-btn prev">&#9664;&#9664;</button>
+                <button class="control-btn play">&#9654;</button>
+                <button class="control-btn next">&#9654;&#9654;</button>
+            </div>
+
+            <div class="progress-container">
+                <span class="time">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="duration">3:20</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
